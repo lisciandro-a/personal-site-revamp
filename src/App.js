@@ -6,6 +6,7 @@ import Connections from './pages/Connections/Connections';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AboutMe from './pages/AboutMe/AboutMe';
 import Welcome from './pages/Welcome/Welcome';
+import Jasmine from './pages/Jasmine/Jasmine';
 
 function App() {
   return (
@@ -18,8 +19,7 @@ function App() {
             <Route path='/about-me' element={<AboutMe />} />
             <Route path='/work-experience' element={null} />
             <Route path='/projects' element={null} />
-            <Route path='/contacts' element={null} />
-            <Route path='/jasmine' element={null}/>
+            <Route path='/jasmine' element={<Jasmine />}/>
             <Route path='*' element={<div>Page not found</div>}/>
           </Routes>
       </BrowserRouter>

@@ -1,7 +1,4 @@
 import { Container, Row, Col, Image } from "react-bootstrap";
-import allisonPic from '../photos/Allison.jpeg'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { blueFlowers, orangeTulips, pinkFlowers, pinkPurpleFlowers, purpleFlowers, redTulips, whiteFlowers, yellowPeonies } from "../photos/flowers/Flowers";
 import { useEffect, useState } from "react";
 import _ from "lodash";
