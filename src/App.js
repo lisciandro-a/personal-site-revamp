@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import { ThemeProvider } from '@mui/material/styles';
+import { theme } from './common/themes';
+import Connections from './pages/Connections/Connections';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import AboutMe from './pages/AboutMe/AboutMe';
+import Welcome from './pages/Welcome/Welcome';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ThemeProvider theme={theme}>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Welcome />} />
+            <Route path='/connections' element={<Connections />} />
+            <Route path='/about-me' element={<AboutMe />} />
+            <Route path='/work-experience' element={null} />
+            <Route path='/projects' element={null} />
+            <Route path='/contacts' element={null} />
+            <Route path='/jasmine' element={null}/>
+            <Route path='*' element={<div>Page not found</div>}/>
+          </Routes>
+      </BrowserRouter>
+      </ThemeProvider>
+      
     </div>
   );
 }
