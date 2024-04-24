@@ -40,7 +40,25 @@ const overrideThemes = {
         minWidth: "50px"
       }
     }
-}
+  },
+  components: {
+    MuiTab: {
+      styleOverrides: {
+        root: {
+          '&.Mui-selected': {
+            color: '#7a8cc4'
+          }
+        }
+      }
+    },
+    MuiTabs: {
+      styleOverrides: {
+        indicator: {
+          backgroundColor: '#7a8cc4',
+        },
+      },
+    },
+  },
 };
 
 const fontThemes  = {

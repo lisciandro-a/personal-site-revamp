@@ -21,7 +21,7 @@ const Item = styled(Paper)(({ theme }) => ({
     whiteSpace: 'pre-line'
   }));
 
-function Board({revealAnswers}) {
+function Board({ revealAnswers }) {
     const categories = {
         yellow: {
             title: 'Supplies for my hobbies',

@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AboutMe from './pages/AboutMe/AboutMe';
 import Welcome from './pages/Welcome/Welcome';
 import Jasmine from './pages/Jasmine/Jasmine';
+import WorkExperience from './pages/WorkExperience/WorkExperience';
 
 function App() {
   return (
@@ -17,12 +18,12 @@ function App() {
             <Route path='/' element={<Welcome />} />
             <Route path='/connections' element={<Connections />} />
             <Route path='/about-me' element={<AboutMe />} />
-            <Route path='/work-experience' element={null} />
+            <Route path='/work-experience' element={<WorkExperience />} />
             <Route path='/projects' element={null} />
             <Route path='/jasmine' element={<Jasmine />}/>
             <Route path='*' element={<div>Page not found</div>}/>
           </Routes>
-      </BrowserRouter>
+        </BrowserRouter>
       </ThemeProvider>
       
     </div>

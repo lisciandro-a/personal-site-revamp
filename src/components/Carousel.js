@@ -2,6 +2,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import { blueFlowers, orangeTulips, pinkFlowers, pinkPurpleFlowers, purpleFlowers, redTulips, whiteFlowers, yellowPeonies } from "../photos/flowers/Flowers";
 import { useEffect, useState } from "react";
 import _ from "lodash";
+import { Typography } from "@mui/material";
 
 function Carousel() {
     const flowerPhotos = [blueFlowers, orangeTulips, pinkFlowers, pinkPurpleFlowers, purpleFlowers, redTulips, whiteFlowers, yellowPeonies];
@@ -47,6 +48,11 @@ function Carousel() {
                 </Col>
                 <Col xs={1} style={{ display: 'flex', alignItems: 'center', justifyContent: 'start'  }}>
                 </Col>
+            </Row>
+            <Row>
+                <Typography variant='subtitle2' sx={{ paddingTop: '20px' }}>
+                    - Photographed with Canon Rebel T4i -
+                </Typography>
             </Row>
         </Container>
     );

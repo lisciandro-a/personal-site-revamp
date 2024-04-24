@@ -41,7 +41,7 @@ function NavDrawer({open, setOpen}) {
                         </ListItemButton>
                     </ListItem>
                     <ListItem>
-                        <ListItemButton>
+                        <ListItemButton onClick={() => handleClick('/work-experience')}>
                             <ListItemIcon>
                                 <FontAwesomeIcon icon={faLaptopCode} />
                             </ListItemIcon>
@@ -73,13 +73,13 @@ function NavDrawer({open, setOpen}) {
 
                     <Collapse in={contactsOpen} timeout="auto" unmountOnExit sx={{ paddingLeft: '32px'}}>
                         <List>
-                            <ListItemButton href='https://github.com/lisciandro-a' >
+                            <ListItemButton href='https://github.com/lisciandro-a' target="_blank" >
                                 <ListItemIcon>
                                     <FontAwesomeIcon icon={faSquareGithub} />
                                 </ListItemIcon>
                                 <ListItemText primary="Github" />
                             </ListItemButton>
-                            <ListItemButton href='https://www.linkedin.com/in/alisciandro/' >
+                            <ListItemButton href='https://www.linkedin.com/in/alisciandro/' target="_blank" >
                                 <ListItemIcon>
                                     <FontAwesomeIcon icon={faLinkedin} />
                                 </ListItemIcon>
