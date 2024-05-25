@@ -4,6 +4,6 @@ This site was created using the javascript version of create react app, and styl
 
 # Accessing the site
 
-This site has been deployed via Netlify, check it out here: 
+This site has been deployed via Netlify, check it out here: (https://main--alisciandro.netlify.app/)[https://main--alisciandro.netlify.app/]
 
 If you would prefer to run the code locally, just run `npm install` and `npm start`.
