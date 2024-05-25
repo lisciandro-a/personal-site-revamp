@@ -4,6 +4,10 @@ import { useState, useEffect } from "react";
 import { experimentalStyled as styled } from '@mui/material/styles';
 import { Container, Toast, ToastContainer } from "react-bootstrap";
 import CircleIcon from '@mui/icons-material/Circle';
+import { categories } from './categories';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
+import Explanations from "./Explanations";
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: '#f0f2f7',
@@ -22,49 +26,6 @@ const Item = styled(Paper)(({ theme }) => ({
   }));
 
 function Board({ revealAnswers }) {
-    const categories = {
-        yellow: {
-            title: 'Supplies for my hobbies',
-            color: '#faefa7',
-            words: [
-                'Yarn',
-                'Pens',
-                'Camera',
-                'Fabric'
-            ]
-        },
-        green: {
-            title: 'Query types used/learning',
-            color: '#c8f2b6',
-            words: [
-                'OData',
-                'GraphQL',
-                'REST',
-                'SQL'
-            ]
-        },
-        blue: {
-            title: 'Programming languages I know',
-            color: '#bdd7f2',
-            words: [
-                'JS',
-                'TS',
-                'Python',
-                'Java'
-            ]
-        },
-        purple: {
-            title: 'Abbreviations for work experience',
-            color: '#cbb4f0',
-            words: [
-                'TA',
-                'SWE',
-                'WJM',
-                'CSI'
-            ]
-        }
-    };
-
     const messages = {
         win: 'You win!',
         lose: 'Nice try!',
@@ -87,6 +48,7 @@ function Board({ revealAnswers }) {
     const [selectedWords, setSelectedWords] = useState([]);
 
     const [showModal, setShowModal] = useState({show: false});
+    const [showExplanationModal, setShowExplanationModal] = useState({show: false});
 
     const [gameOver, setGameOver] = useState(false);
 
@@ -128,7 +90,7 @@ function Board({ revealAnswers }) {
             return;
         }
 
-        setShowModal({show: false})
+        setShowModal({show: false});
     }
 
     useEffect(() => {
@@ -180,6 +142,7 @@ function Board({ revealAnswers }) {
                     <Toast.Body>{showModal.message}</Toast.Body>
                 </Toast>
             </ToastContainer>}
+            <Explanations isOpen={showExplanationModal} setIsOpen={setShowExplanationModal} />
             <Grid container spacing={{ xs: 2}} columns={4}>
                 {solvedCategories?.map((solved, index) => { 
                     const category = categories[solved];
@@ -187,7 +150,13 @@ function Board({ revealAnswers }) {
                     <Grid item key={index} xs={4}>    
                         <SolvedItem elevation={3} sx={{ backgroundColor: category.color }}>
                             <Typography style={{whiteSpace: 'pre-line', lineHeight: '40px', textAlign: 'center'}}>
-                                <b>{category.title + "\n"}</b>
+                                <b>{category.title}</b> &nbsp;
+                                {solvedCategories.length ===4 && <FontAwesomeIcon 
+                                    icon={faCircleInfo} 
+                                    cursor='pointer' 
+                                    onClick={() => setShowExplanationModal({show: true, category})} 
+                                />}
+                                <br/>
                                 {category.words.join(", ")}
                             </Typography>
                         </SolvedItem>

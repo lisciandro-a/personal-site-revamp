@@ -49,7 +49,7 @@ function NavDrawer({open, setOpen}) {
                         </ListItemButton>
                     </ListItem>
                     <ListItem>
-                        <ListItemButton>
+                        <ListItemButton onClick={() => handleClick('/projects')}>
                             <ListItemIcon>
                                 <FontAwesomeIcon icon={faCodeCommit}/>
                             </ListItemIcon>

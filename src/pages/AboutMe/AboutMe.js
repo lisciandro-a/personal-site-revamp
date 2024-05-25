@@ -1,4 +1,4 @@
-import { Col, Container, Image, Row } from "react-bootstrap";
+import { Col, Image, Row } from "react-bootstrap";
 import Page from "../../components/Page";
 import allisonPic from '../../photos/Allison.jpeg'
 import { Typography } from "@mui/material";

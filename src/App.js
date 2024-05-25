@@ -8,6 +8,7 @@ import AboutMe from './pages/AboutMe/AboutMe';
 import Welcome from './pages/Welcome/Welcome';
 import Jasmine from './pages/Jasmine/Jasmine';
 import WorkExperience from './pages/WorkExperience/WorkExperience';
+import Projects from './pages/Projects/Projects';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
             <Route path='/connections' element={<Connections />} />
             <Route path='/about-me' element={<AboutMe />} />
             <Route path='/work-experience' element={<WorkExperience />} />
-            <Route path='/projects' element={null} />
+            <Route path='/projects' element={<Projects />} />
             <Route path='/jasmine' element={<Jasmine />}/>
             <Route path='*' element={<div>Page not found</div>}/>
           </Routes>
