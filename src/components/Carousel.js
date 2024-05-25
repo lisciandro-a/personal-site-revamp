@@ -1,7 +1,6 @@
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { blueFlowers, orangeTulips, pinkFlowers, pinkPurpleFlowers, purpleFlowers, redTulips, whiteFlowers, yellowPeonies } from "../photos/flowers/Flowers";
 import { useEffect, useState } from "react";
-import _ from "lodash";
 import { Typography } from "@mui/material";
 import './carousel.css';
 
