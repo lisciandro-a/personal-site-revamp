@@ -16,7 +16,7 @@ function Navigation() {
                 </Container>
                 <Container> 
                     <FontAwesomeIcon cursor='pointer' onClick={() => setDrawerOpen(true)} icon={faBars} size="xl" color="white" style={{ marginRight: "20px",  float: "right" }}/>
-                        <a href='/LisciandroResume100223.pdf' download={'AllisonLisciandroResume.pdf'}>
+                        <a href='/LisciandroResume052524.pdf' download={'AllisonLisciandroResume.pdf'}>
                             <Tooltip title='Download resume'>
                                 <FontAwesomeIcon icon={faFileDownload} size="xl" color="white" style={{ marginRight: "20px",  float: "right" }}/> 
                             </Tooltip>
