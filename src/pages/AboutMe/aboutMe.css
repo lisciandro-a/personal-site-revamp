@@ -2,6 +2,12 @@
     display: none;
 }
 
+.pageLinks {
+    color: #7a8cc4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 @media only screen and (max-width: 768px) {
     .photo {
         width: 200px;

@@ -51,7 +51,7 @@ function AboutMe() {
                         <br className="break"/>
 
                         <Typography variant='body1' marginTop='2%'>
-                            I'm a current Software Engineer 1 at Wood Mackenzie, where I do full-stack development. I work primarily with Typescript and React, and interface occasionally with Java and Python as well. I enjoy having a broad width of knowledge, and put a lot of emphasis into picking up wide variety of work, whilst still maintaining areas of expertise. I am also a fast learner, an eager volunteer, and an active participant in team discussions and decision making. At present, I am a co-op manager and I continuously support the co-op program through onboarding planning and conducting interviews.
+                            I'm a current Software Engineer 1 at Wood Mackenzie, where I do full-stack development. I work primarily with Typescript and React, and interface occasionally with Java and Python as well. I enjoy having a broad width of knowledge, and put a lot of emphasis into picking up wide variety of work, whilst still maintaining areas of expertise. I am also a fast learner, an eager volunteer, and an active participant in team discussions and decision making. At present, I am a co-op manager and I continuously support the co-op program through onboarding planning and conducting interviews. For more information on my experience, check out my <a href='/work-experience' className="pageLinks">Work Experience</a> and <a href='/projects' className="pageLinks">Projects</a> pages!
                         </Typography>
 
                         <Typography variant='body1' paddingTop='2%'>
