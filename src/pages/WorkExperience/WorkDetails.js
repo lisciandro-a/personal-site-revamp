@@ -21,7 +21,7 @@ function WorkDetails({ experience, currId }) {
                                 {experience.jobTitle}
                             </h2>
                         </Col>
-                        <Col sm={3} style={{marginTop: '10px'}} className="location">
+                        <Col sm={3} style={{marginTop: '10px', textAlign: 'right', paddingRight:'20px'}} className="location">
                             <h6>
                                 <FontAwesomeIcon icon={faLocationDot} />
                                 &nbsp;
