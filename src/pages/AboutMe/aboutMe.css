@@ -1,5 +1,12 @@
+.break {
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
     .photo {
         width: 200px;
+    }
+    .break {
+        display: inline;
     }
 }

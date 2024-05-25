@@ -48,6 +48,7 @@ function AboutMe() {
                         <Typography variant='h4'> <FontAwesomeIcon icon={faTerminal} style={{ paddingRight: '2px'}}/> {displayString.join('')}<FontAwesomeIcon icon={faICursor} fade={shouldFade()}/></Typography>
 
                         <Typography variant='subtitle2' paddingTop='8px'> B.S. in Computer Science - Northeastern University </Typography>
+                        <br className="break"/>
 
                         <Typography variant='body1' marginTop='2%'>
                             I'm a current Software Engineer 1 at Wood Mackenzie, where I do full-stack development. I work primarily with Typescript and React, and interface occasionally with Java and Python as well. I enjoy having a broad width of knowledge, and put a lot of emphasis into picking up wide variety of work, whilst still maintaining areas of expertise. I am also a fast learner, an eager volunteer, and an active participant in team discussions and decision making. At present, I am a co-op manager and I continuously support the co-op program through onboarding planning and conducting interviews.
