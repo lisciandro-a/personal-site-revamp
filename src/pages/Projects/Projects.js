@@ -2,7 +2,6 @@ import { Card, CardActions, CardContent, CardMedia, Button, Chip } from "@mui/ma
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import Page from "../../components/Page";
-import { popJig } from "../../photos/projects/ProjectPhotos";
 import { projectDescriptions } from "./projectDescriptions";
 import { Row } from "react-bootstrap";
 

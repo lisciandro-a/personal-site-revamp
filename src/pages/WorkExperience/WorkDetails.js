@@ -1,6 +1,7 @@
 import { Col, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import './workDetails.css'
 
 
 function WorkDetails({ experience, currId }) {
@@ -15,12 +16,12 @@ function WorkDetails({ experience, currId }) {
             <Row>
                 <Col xs={12}>
                     <Row>
-                        <Col xs={10}>
+                        <Col sm={9}>
                             <h2>
                                 {experience.jobTitle}
                             </h2>
                         </Col>
-                        <Col xs={2} style={{marginTop: 'auto'}}>
+                        <Col sm={3} style={{marginTop: '10px'}} className="location">
                             <h6>
                                 <FontAwesomeIcon icon={faLocationDot} />
                                 &nbsp;

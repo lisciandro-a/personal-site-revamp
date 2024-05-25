@@ -13,6 +13,7 @@ import Projects from './pages/Projects/Projects';
 function App() {
   return (
     <div className="App">
+      <meta content="width=device-width, initial-scale=1" name="viewport" />
       <ThemeProvider theme={theme}>
         <BrowserRouter>
           <Routes>

@@ -1,0 +1,9 @@
+.location {
+    display: inline;
+}
+
+@media only screen and (max-width: 576px) {
+    .location {
+        display: none;
+    }
+}

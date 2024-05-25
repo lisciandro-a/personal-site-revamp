@@ -7,6 +7,7 @@ import { faCat, faICursor, faLocationDot, faTerminal } from "@fortawesome/free-s
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Carousel from "../../components/Carousel";
+import './aboutMe.css';
 
 function AboutMe() {
     const navigate = useNavigate();
@@ -36,13 +37,14 @@ function AboutMe() {
         <Page>
             <div style={{ paddingTop: '20px' }}>
                 <Row>
-                    <Col xs='2'>
-                        <Image src={allisonPic} rounded={true} thumbnail={true} style={{ backgroundColor: '#a3b8f7' }}/>
+                    <Col xs='12' md='2'>
+                        <Image src={allisonPic} rounded={true} thumbnail={true} style={{ backgroundColor: '#a3b8f7' }} className="photo"/>
                         <Typography paddingTop='8px'>
                             <FontAwesomeIcon icon={faLocationDot} /> Boston, MA
                         </Typography>
+                        <br/>
                     </Col>
-                    <Col xs='10'>
+                    <Col xs='12' md='10'>
                         <Typography variant='h4'> <FontAwesomeIcon icon={faTerminal} style={{ paddingRight: '2px'}}/> {displayString.join('')}<FontAwesomeIcon icon={faICursor} fade={shouldFade()}/></Typography>
 
                         <Typography variant='subtitle2' paddingTop='8px'> B.S. in Computer Science - Northeastern University </Typography>

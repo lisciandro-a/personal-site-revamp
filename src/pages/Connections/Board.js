@@ -8,10 +8,17 @@ import { categories } from './categories';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 import Explanations from "./Explanations";
+import './board.css';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: '#f0f2f7',
-    width: '150px', 
+    width: '80px', 
+    [theme.breakpoints.up("576")]: {
+        width: '100px', 
+    },
+    [theme.breakpoints.up("768")]: {
+        width: '150px', 
+    },
     height: '80px', 
     alignItems: 'center', 
     lineHeight: '80px',
@@ -21,8 +28,14 @@ const Item = styled(Paper)(({ theme }) => ({
 
   const SolvedItem = styled(Item)(({ theme }) => ({
     backgroundColor: '#f0f2f7',
-    width: '628px', 
-    whiteSpace: 'pre-line'
+    width: '328px', 
+    [theme.breakpoints.up("576")]: {
+        width: '428px', 
+    },
+    [theme.breakpoints.up("768")]: {
+        width: '628px', 
+    },
+    whiteSpace: 'pre-line',
   }));
 
 function Board({ revealAnswers }) {
@@ -131,7 +144,7 @@ function Board({ revealAnswers }) {
     }, [revealAnswers])
 
     return (
-        <Box width={"620px"} margin='auto'>
+        <Box margin='auto' className='box'>
             {showModal.show && <ToastContainer position="top-center" style={{ width: '100px', translate: '0px 120px', opacity: 1 }}>
                 <Toast
                     show={showModal.show}

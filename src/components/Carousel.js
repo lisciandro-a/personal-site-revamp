@@ -3,6 +3,7 @@ import { blueFlowers, orangeTulips, pinkFlowers, pinkPurpleFlowers, purpleFlower
 import { useEffect, useState } from "react";
 import _ from "lodash";
 import { Typography } from "@mui/material";
+import './carousel.css';
 
 function Carousel() {
     const flowerPhotos = [blueFlowers, orangeTulips, pinkFlowers, pinkPurpleFlowers, purpleFlowers, redTulips, whiteFlowers, yellowPeonies];
@@ -29,24 +30,24 @@ function Carousel() {
     return (
         <Container>
             <Row>
-                <Col xs={1} style={{  display: 'flex', alignItems: 'center', justifyContent: 'end' }}>
+                <Col xs={0} md={1} style={{  display: 'flex', alignItems: 'center', justifyContent: 'end' }}>
                 </Col>
-                <Col xs={2} style={{  display: 'flex', alignItems: 'center', justifyContent: 'end' }}>
-                    <Image width='60%' src={getPhoto(0)} rounded={true} thumbnail={true} style={{ backgroundColor: '#a3b8f7' }}/>
+                <Col xs={1} md={2} style={{  display: 'flex', alignItems: 'center', justifyContent: 'end' }}>
+                    <Image width='60%' src={getPhoto(0)} rounded={true} thumbnail={true} style={{ backgroundColor: '#a3b8f7' }} className="carouselItem"/>
                 </Col>
-                <Col xs={2} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'  }}>
+                <Col xs={3} md={2} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'  }}>
                     <Image width='80%' src={getPhoto(1)} rounded={true} thumbnail={true} style={{ backgroundColor: '#a3b8f7' }}/>
                 </Col>
-                <Col xs={2} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <Col xs={4} md={2} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <Image src={getPhoto(2)} rounded={true} thumbnail={true} style={{ backgroundColor: '#a3b8f7' }}/>
                 </Col>
-                <Col xs={2} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <Col xs={3} md={2} style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <Image width='80%' src={getPhoto(3)} rounded={true} thumbnail={true} style={{ backgroundColor: '#a3b8f7' }}/>
                 </Col>
-                <Col xs={2} style={{ display: 'flex', alignItems: 'center', justifyContent: 'start'  }}>
-                    <Image width='60%' src={getPhoto(4)} rounded={true} thumbnail={true} style={{ backgroundColor: '#a3b8f7' }}/>
+                <Col xs={1} md={2} style={{ display: 'flex', alignItems: 'center', justifyContent: 'start'  }}>
+                    <Image width='60%' src={getPhoto(4)} rounded={true} thumbnail={true} style={{ backgroundColor: '#a3b8f7' }} className="carouselItem"/>
                 </Col>
-                <Col xs={1} style={{ display: 'flex', alignItems: 'center', justifyContent: 'start'  }}>
+                <Col xs={0} md={1} style={{ display: 'flex', alignItems: 'center', justifyContent: 'start'  }}>
                 </Col>
             </Row>
             <Row>
