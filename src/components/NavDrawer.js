@@ -94,7 +94,7 @@ function NavDrawer({open, setOpen}) {
                         </List>
                     </Collapse>
                     <ListItem>
-                        <ListItemButton href='/LisciandroResume052524.pdf' download={'AllisonLisciandroResume.pdf'}>
+                        <ListItemButton href='/LisciandroResume.pdf' download={'AllisonLisciandroResume.pdf'}>
                             <ListItemIcon>
                                 <FontAwesomeIcon icon={faFileDownload} />
                             </ListItemIcon>
