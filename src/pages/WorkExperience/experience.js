@@ -12,12 +12,12 @@ export const workExperience = [
         location: 'Boston, MA',
         jobType: JobType.FullTime,
         startDate: new Date(2023, 6),
-        endDate: undefined,
+        endDate: new Date(2024, 4),
         descriptionSections: [
             {
                 title: 'Technical Skills',
                 bullets: [
-                    'Contribute to overall product by refactoring common configuration to expand re-usability and clarity, implementing new functionality via Typescript, quickly pushing out bug-fixes that affect multiple teams, and reviewing cross-team PRs.',
+                    'Contributed to overall product by refactoring common configuration to expand re-usability and clarity, implementing new functionality via Typescript, quickly pushing out bug-fixes that affect multiple teams, and reviewing cross-team PRs.',
                     'Organized with data and multiple Product Owners to strategize a long-term solution for maintaining cross-product data consistency.',
                     'Led an effort to refactor Redux code in order to ready an updated product for client use and allow us to begin deprecating the legacy version. This allowed for better support of caching and reduced the number of page re-renders from 2-3 times to 1, creating a more seamless experience for the user.',
                     'Co-led work on enhancements to an internal React app by organizing meetings with the backend team to refine tickets and remove blockers, and by delegating work to multiple new hires.',
@@ -27,7 +27,7 @@ export const workExperience = [
             {
                 title: 'Co-op Program Involvement',
                 bullets: [
-                    'Acting as a Spring 2024 co-op supervisor to provide technical and professional support by holding regular check-ins for setting goals and helping to create action items for overcoming blockers.',
+                    'Acted as a Spring 2024 co-op supervisor to provide technical and professional support by holding regular check-ins for setting goals and helping to create action items for overcoming blockers.',
                     'Co-led and planned onboarding for Spring 2024 co-ops, which included planning technical workshops, organizing lectures, creating a schedule, and coordinating with HR to schedule related meetings.',
                     'Participated in behavioral interviews and hiring discussions regarding co-ops for both Spring and Fall 2024 cycles.',
                 ]
@@ -35,8 +35,8 @@ export const workExperience = [
             {
                 title: 'Cultural Impacts & Other Contributions',
                 bullets: [
-                    'Maintain consistent communication and negotiation with Product Owners to make sure that story requirements are clear and Acceptance Criteria is met, while still considering tradeoffs with functionality and our business timelines.',
-                    'Eagerly volunteer for tasks such as demoing completed work at sprint demos, conducting interviews, and onboarding new joiners.',
+                    'Maintained consistent communication and negotiation with Product Owners to make sure that story requirements are clear and Acceptance Criteria is met, while still considering tradeoffs with functionality and our business timelines.',
+                    'Eagerly volunteered for tasks such as demoing completed work at sprint demos, conducting interviews, and onboarding new joiners.',
                     'Presented a high-level technical overview of our product to an architect to help familiarize him with specifics of the platform, such as the overall code structure and how each part of the UI interacts.',
                 ]
             },
