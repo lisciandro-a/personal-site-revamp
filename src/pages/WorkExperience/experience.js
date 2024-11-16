@@ -6,7 +6,34 @@ const JobType = {
 
 export const workExperience = [
     {
-        jobId: 0,
+        jobId: 4,
+        jobTitle: 'Software Engineer',
+        company: 'Philips',
+        location: 'Cambridge, MA',
+        jobType: JobType.FullTime,
+        startDate: new Date(2024, 6),
+        endDate: undefined,
+        descriptionSections: [
+            {
+                title: 'Technical Skills',
+                bullets: [
+                    'Leading development on a new feature by working cross-functionally with design, clinicians, and marketing to determine feature requirements and by delegating tasks to developers. In order to improve efficiency and decrease the delivery timeline, tasks have been created with a focus on the ability to be worked on in parallel.',
+                    'Modernizing PIC iX UI through WinForms by improving both visual and code design, and ensuring correct behavior by introducing thorough unit testing.',
+                    'Enhancing existing features within PIC iX using C# whilst decreasing tech debt, such as by removing duplicate code and cleaning up static classes in order to improve testability.',
+                ]
+            },
+            {
+                title: 'Cultural Impacts & Other Contributions',
+                bullets: [
+                    'Leading co-op interviews and introducing new changes to the process by advocating for involvement of current co-ops in the actual interviews',
+                    'Actively engaging with the Design team to ensure critical functionality is maintained whilst increasing usability to ensure quality and improve patient safety.',
+                ]
+            },
+
+        ],
+    },
+    {
+        jobId: 3,
         jobTitle: 'Software Engineer I',
         company: 'WoodMackenzie',
         location: 'Boston, MA',
@@ -44,7 +71,7 @@ export const workExperience = [
         ],
     },
     {
-        jobId: 1,
+        jobId: 2,
         jobTitle: 'Software Engineering Co-op',
         company: 'WoodMackenzie',
         location: 'Boston, MA',
@@ -63,9 +90,9 @@ export const workExperience = [
         ],
     },
     {
-        jobId: 2,
+        jobId: 1,
         jobTitle: 'Software Engineering Co-op',
-        company: 'Royal Philips',
+        company: 'Philips',
         location: 'Cambridge, MA',
         jobType: JobType.Intern,
         startDate: new Date(2021, 6),
@@ -82,7 +109,7 @@ export const workExperience = [
         ],
     },
     {
-        jobId: 3,
+        jobId: 0,
         jobTitle: 'Teaching Assistant',
         company: 'Northeastern University - Khoury College of Computer Sciences',
         location: 'Boston, MA',

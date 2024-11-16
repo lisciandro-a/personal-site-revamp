@@ -5,7 +5,8 @@ import WorkDetails from "./WorkDetails";
 import { workExperience } from "./experience";
 
 function WorkExperience() {
-    const [currTab, setCurrTab] = useState(0);
+    const mostRecentWorkId = workExperience.length - 1;
+    const [currTab, setCurrTab] = useState(mostRecentWorkId);
 
     const theme = useTheme();
     const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
