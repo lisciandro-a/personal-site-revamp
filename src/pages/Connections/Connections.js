@@ -1,5 +1,5 @@
 import Page from "../../components/Page";
-import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 import { IconButton, Stack, Tooltip, Typography } from "@mui/material";
 import { useState } from "react";
 import HowToPlay from "./HowToPlay";
@@ -20,7 +20,7 @@ function Connections() {
                     Allison's Connections
                 </Typography>
                 <IconButton color="black" onClick={() => updateModalIsOpen(true)} size="small">
-                    <InfoOutlinedIcon sx={{ paddingTop: "8px", fontSize: "34px" }} />
+                    <HelpOutlineIcon sx={{ paddingTop: "8px", fontSize: "34px" }} />
                 </IconButton>
                 <Tooltip title={revealAnswers ? "Reset" : "Reveal answers"} placement="right">
                     <IconButton color="black" onClick={() => updateRevealAnswers(!revealAnswers)} size="small">
